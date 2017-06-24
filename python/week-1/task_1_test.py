@@ -6,7 +6,6 @@ class CheckBracketsTestCase(unittest.TestCase):
 
     def test_1(self):
         self.assertEqual('Success', check_brackets('[]'))
-# qqq
 
     def test_2(self):
         self.assertEqual('Success', check_brackets('{}[]'))
@@ -25,7 +24,7 @@ class CheckBracketsTestCase(unittest.TestCase):
 
 
     def test_6(self):
-        self.assertEqual('1', check_brackets('()'))
+        self.assertEqual('1', check_brackets('('))
 
 
     def test_7(self):

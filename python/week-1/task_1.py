@@ -1,27 +1,24 @@
 # Task 1
 
 def check_brackets(seq):
-    l = str(len(seq))
     arr = []
+    count = 0
     for x in seq:
-
-        #print(arr)
+        count += 1
         if x in '([{':
-        #    print('append()')
             arr.append(x)
         if x in ')]}':
-        #    print('pop()')
             last = arr.pop()
-            #print(last)
-
             if x == ')':
                 if last != '(':
-                    return l
+                    return str(count)
             if x == ']':
                 if last != '[':
-                    return l
+                    return str(count)
             if x == '}':
                 if last != '{':
-                    return l
+                    return str(count)
+    if len(arr) > 0:
+        return str(count)
 
     return 'Success'
