@@ -39,5 +39,9 @@ class CheckBracketsTestCase(unittest.TestCase):
         self.assertEqual('10', check_brackets('foo(bar[i);'))
 
 
+    def test_10(self):
+        self.assertEqual('5', check_brackets('()[]}'))
+
+
 if __name__ == '__main__':
     unittest.main()
