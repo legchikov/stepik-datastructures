@@ -6,18 +6,14 @@ def create_tree(seq):
             tree.get(key).append(value)
         else:
             tree[key] = list([value])
-    #print(tree)
     return tree
 
 
 def height_tree(parents, root):
     height = 1
-    #print('root = {}'.format(root))
     if root in parents:
         node = parents.get(root)
-        #print('node = {}'.format(node))
         for subnode in node:
-            #print('subnode = {}'.format(subnode))
             height = max(height, 1 + height_tree(parents, subnode))
         return height
     else:
