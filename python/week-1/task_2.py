@@ -27,4 +27,4 @@ def height_tree(parents, root):
 #str_input = input()
 #seq = [int(s) for s in str_input.split(' ')]
 
-#parents = {parent:node for node, parent in enumerate(seq)}
+#parents = {parent:node for node, parent in enumerate(seq)} # list() --> dict()
